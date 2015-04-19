@@ -36,20 +36,3 @@ CREATE TABLE temptweets
   latitude double precision,
   longitude double precision
 )
-
-
-
-
-
-/*******************************
-Table: tweetlog
-*******************************/
-CREATE TABLE tweetlog
-(
-  runid serial NOT NULL PRIMARY KEY,
-  batchid integer,
-  rundate timestamp without time zone,
-  keyword character varying(50),
-  harvestedthisrun integer,
-  totalharvested integer
-)
